@@ -40,7 +40,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-color: rgb(71, 179, 21);
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,6 @@ section {
 }
 
 #ingredient-section {
-    background-color: rgb(71, 179, 21);
     display: flex;
     flex-direction: row;
 }
