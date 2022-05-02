@@ -16,4 +16,4 @@ js:
 --grab form and input from the DOM
 --add event listener for form that pushes the ingredient to an array and then prints the array to the document
 --add event listener for save meal to clear the document and print the name of the meal with the number of ingredients.
---IMPURE functions when calling to render imported from a utils file
+--PURE functions when calling to render imported from a utils file

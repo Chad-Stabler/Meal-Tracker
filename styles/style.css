@@ -53,6 +53,11 @@ section {
     border: solid 2px var(--color1);
 }
 
+#ingredient-section {
+    display: flex;
+    flex-direction: row;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
