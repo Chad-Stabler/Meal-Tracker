@@ -3,6 +3,6 @@ export function renderIngredient(li) {
     newL.textContent = `Ingredient: ${li.ingredient} Quantity: ${li.quantity} ${li.measurement}`;
     return newL;
 }
-export function renderMeal() {
+export function renderMeal(li) {
     
 }

@@ -2,6 +2,7 @@
 import {renderIngredient, renderMeal} from './utils.js';
 const ingredientForm = document.getElementById('ingredient-form');
 const ingredientList = document.getElementById('ingredient-list');
+const removeButton = document.getElementById('remove');
 
 // let state
 let ingredients = [];
@@ -13,6 +14,12 @@ function renderIngredients() {
         ingredientList.append(li);
     }
 }
+
+function removeIngredient() {
+    ingredients.pop();
+    renderIngredients();
+}
+
 ingredientForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const ingredientData = new FormData(ingredientForm);
@@ -25,6 +32,8 @@ ingredientForm.addEventListener('submit', (e) => {
     renderIngredients();
     ingredientForm.reset();
 });
+
+removeButton.addEventListener('click', () => {removeIngredient();});
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state

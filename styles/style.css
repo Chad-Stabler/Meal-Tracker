@@ -54,8 +54,22 @@ section {
 }
 
 #ingredient-section {
+    background-color: rgb(71, 179, 21);
+    display: flex;
+    flex-direction: row;
+}
+
+form {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    margin: 5px;
+}
+
+ul {
+    margin-left: 15px;
 }
 
 header {
