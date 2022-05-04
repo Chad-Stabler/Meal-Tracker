@@ -39,9 +39,11 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+
 section {
     background-color: rgba(71, 179, 21, .3);
-    max-width: 80%;
+    width: 1750px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,15 +51,20 @@ section {
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
+    margin-bottom: 10px;
     border-style: groove;
     border-radius: 5px;
+    color: rgb(97, 44, 196);
+}
+
+li {
+    margin: 0px 5px;
 }
 
 #ingredient-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     padding: 5px;
 }
 
@@ -70,6 +77,26 @@ form {
     margin: 5px 0px;
     flex-direction: column;
     align-items: flex-end;
+    color: rgb(97, 44, 196);
+}
+
+button {
+    margin: 5px 5px;
+    background-color: rgb(97, 44, 196);
+    border-color: rgb(196, 80, 34);
+    color: rgb(112, 168, 66);
+}
+
+select {
+    background-color: rgb(97, 44, 196);
+    border-color: rgb(196, 80, 34);
+    color: rgb(112, 168, 66);
+}
+
+input {
+    background-color: rgb(97, 44, 196);
+    border-color: rgb(196, 80, 34);
+    color: rgb(112, 168, 66);
 }
 
 label {
@@ -92,6 +119,7 @@ header {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    color: rgb(97, 44, 196);
 }
 
 .gutter-right {
