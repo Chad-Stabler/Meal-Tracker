@@ -24,11 +24,11 @@ body {
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
+    --gutter: 5px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: rgb(73, 109, 56);
 }
 
 main {
@@ -39,9 +39,11 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+
 section {
-    background-color: var(--color5);
-    max-width: 80%;
+    background-color: rgba(71, 179, 21, .3);
+    width: 1750px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,8 +51,60 @@ section {
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    margin-bottom: 10px;
+    border-style: groove;
+    border-radius: 5px;
+    color: rgb(97, 44, 196);
+}
+
+li {
+    margin: 0px 5px;
+}
+
+#ingredient-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 5px;
+}
+
+#save-meal-section {
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    margin: 5px 0px;
+    flex-direction: column;
+    align-items: flex-end;
+    color: rgb(97, 44, 196);
+}
+
+button {
+    margin: 5px 5px;
+    background-color: rgb(97, 44, 196);
+    border-color: rgb(196, 80, 34);
+    color: rgb(112, 168, 66);
+}
+
+select {
+    background-color: rgb(97, 44, 196);
+    border-color: rgb(196, 80, 34);
+    color: rgb(112, 168, 66);
+}
+
+input {
+    background-color: rgb(97, 44, 196);
+    border-color: rgb(196, 80, 34);
+    color: rgb(112, 168, 66);
+}
+
+label {
+    margin: 5px;
+}
+
+ul {
+    margin-left: 15px;
 }
 
 header {
@@ -65,6 +119,7 @@ header {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    color: rgb(97, 44, 196);
 }
 
 .gutter-right {
@@ -78,7 +133,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
